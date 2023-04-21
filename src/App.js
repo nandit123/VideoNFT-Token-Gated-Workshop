@@ -38,7 +38,7 @@ function App() {
     const sig = await encryptionSignature();
     const response = await lighthouse.uploadEncrypted(
       e,
-      "ff154427.bfe8ebdc06bb4a919ddfeeda06a09692",
+      "", // add api key here
       sig.publicKey,
       sig.signedMessage,
       progressCallback
